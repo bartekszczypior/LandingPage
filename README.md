@@ -1,1 +1,1 @@
-# LandingPage
+# Simple-Single-Page
