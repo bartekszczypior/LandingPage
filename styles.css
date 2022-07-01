@@ -11,6 +11,8 @@ body{
 }
 .wrapper{
     width: 100%;
+    max-width: 1240px;
+    margin:0 auto;
     
     
    
@@ -171,6 +173,74 @@ margin-bottom: 10px;
    
     
 }
+.contact{
+    position: relative;
+    width: 100%;
+   
+    padding: 10px 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h1{
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0 30px;
+}
+.social{
+    margin: 20px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+   
+}
+.social p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+.iconWrapper{
+    text-align: center;
+    margin:15px 0;
+}
+.iconWrapper a img{
+    margin-bottom: 20px;
+}
+.socialWrapper a img{
+   height: 8vh;
+  
+    
+}
+.socialWrapper{
+   
+   width: 90%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ 
+
+
+  
+ }
+
+footer{
+    width: 100%;
+  
+   text-align: center;
+    background-color: rgb(141, 97, 60);
+    padding: 20px 0;
+}
+
+
 
 
 
