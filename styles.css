@@ -34,6 +34,7 @@ header{
 position: absolute;
 width: 100%;
 height: 100%;
+
 background-color: rgba(0, 0, 0, .5);
 display: flex;
 flex-direction: column;
@@ -44,15 +45,15 @@ align-items: center;
 }
 .heroText h1{
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 5%;
    
 }
 .heroText p{
-    
     color:white;
-    font-size: 1.5rem;
-    margin-bottom: 25%;
+    text-align: center;
+  font-size: 1.5rem;
+    margin-bottom: 20%;
 }
 .heroText a{
     text-decoration: none;
@@ -62,27 +63,62 @@ align-items: center;
     font-size: 1rem;
     border-radius: 15px;
 }
+@media (orientation: landscape){
+
+    .heroText{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    }
+    .heroText h1{
+        color: white;
+        font-size: 2.5rem;
+       
+       
+    }
+    .heroText p{
+        
+        color:white;
+        text-align: center;
+      font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+    .heroText a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 40px;
+        background-color: rgba(255, 255, 255, 0.7);
+        font-size: 1rem;
+        border-radius: 15px;
+    }
+
+}
 
 .futures{
     width: 100%;
-    height: 100vh;
     display: grid;
-    margin-top: 10%;
+    padding: 40px 0;
     grid-template-rows: auto;
-    grid-gap: 2%;
+   
 }
 .future{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  
-  
-   
+  padding: 20px 10px;
 }
 .future h1{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    text-align: center;
     margin: 20px 0;
 }
 .future p{
@@ -96,6 +132,43 @@ align-items: center;
 
 
 }
+
+@media (orientation: landscape) {
+    .futures{
+        width: 100%;
+        display: grid;
+        padding: 40px 0;
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+
+    .future{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+      }
+      .future h1{
+          font-size: 1rem;
+          text-align: center;
+          margin: 20px 0;
+      }
+      .future p{
+          font-size: .8em;
+          color: black;
+          text-align: center;
+          margin: 20px 0;
+      }
+      .future img{
+       width: 20%;
+      
+      
+      }
+}
+
+
+
 .about{
  
     width: 100%;
@@ -131,9 +204,66 @@ align-items: center;
   
    
 }
-.about img{
-width: 80%;
-margin-bottom: 10px;
+
+.team{
+    width: 100%;
+    
+    display: grid;
+    grid-template-rows: auto;
+}
+.team img{
+    width: 80%;
+    margin-bottom: 10px;
+    }
+
+@media (orientation: landscape) {
+    .about{
+ 
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        align-items: center;
+        background-color: rgb(141, 97, 60);
+      
+        color: rgb(247, 247, 247);
+        padding: 20px 20px;
+    
+    }
+    .about h1{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 5%;
+        text-transform: uppercase;
+    }
+    .about p{
+        font-size: 1rem;
+        margin-bottom: 5%;
+        text-align: justify;
+       
+    }
+    .imgWrapper{
+        width: auto;
+       
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.267);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+       
+    }
+    .team{
+        display: grid;
+        grid-gap: 5%;
+        grid-template-columns: 1fr 1fr 1fr ;
+        
+    }
+    .team img{
+    width: 100%;
+    margin-bottom: 10px;
+    }
 }
 .galery{
     width: 100%;
@@ -159,7 +289,7 @@ margin-bottom: 10px;
     padding: 20px 25px;
 }
 .projWrap{
-    background-color: rgb(43, 43, 43);
+    background-color: #ddd;
 }
 .galery a{
   margin: 20px auto;
@@ -173,6 +303,50 @@ margin-bottom: 10px;
    
     
 }
+@media (orientation: landscape){
+    .galery{
+        width: 100%;
+        height: 100%;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .galery h1{
+        font-size: 2rem;
+        text-align: center;
+        color:rgb(107, 58, 18);
+        text-transform: uppercase;
+    }
+    .proj{
+        width: 90%;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+        padding: 20px 25px;
+    }
+    .projWrap{
+       background-color: #ddd;
+     
+        
+    }
+    .galery a{
+      margin: 20px auto;
+        text-decoration: none;
+        color: rgb(107, 58, 18);;
+        padding:10px 30px;
+        max-width: 70%;
+        background-color: transparent;
+        border:solid 2px rgb(107, 58, 18);;
+        font-size: 1rem;
+       
+        
+    }
+
+}
 .contact{
     position: relative;
     width: 100%;
@@ -184,18 +358,28 @@ margin-bottom: 10px;
     align-items: center;
     flex-direction: column;
 }
+.contactWrapper{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+}
 .contact h1{
-    font-size: 1.5em;
+    font-size: 1.2rem;
     text-align: center;
     text-transform: uppercase;
     margin: 10px 0 30px;
 }
 .social{
+    width: 100%;
     margin: 20px 0;
     padding: 10px 0;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     
@@ -206,14 +390,22 @@ margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .iconWrapper{
-    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
     margin:15px 0;
+   
 }
-.iconWrapper a img{
+.iconWrapper img{
+  
     margin-bottom: 20px;
+    
 }
 .socialWrapper a img{
    height: 8vh;
@@ -222,7 +414,7 @@ margin-bottom: 10px;
 }
 .socialWrapper{
    
-   width: 90%;
+   width: 100%;
  display: flex;
  justify-content: space-around;
  align-items: center;
@@ -231,7 +423,31 @@ margin-bottom: 10px;
 
   
  }
+@media (orientation: landscape){
 
+    .contact{
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 5px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      
+    }
+    .contactWrapper{
+        flex-direction: column;
+        justify-content: space-around;
+       
+    }
+    .iconWrapper img{
+       
+        margin-bottom: 20px;
+    }
+
+    
+}
 footer{
     width: 100%;
   
@@ -248,22 +464,3 @@ footer{
 
 
 
-@media (orientation: landscape) {
-    .futures{
-        margin-left: 5%;
-        width: 90%;
-       height: 10vh;
-        display: grid;
-        
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2%;
-    }
-
-    .future img{
-        width:50px;
-       
-       
-       
-       }
-
-  }
